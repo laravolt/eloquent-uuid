@@ -21,6 +21,15 @@ Laravolt\Database\Eloquent\UuidServiceProvider::class,
 
 ### Create/Alter Database Table Column Type
 
+``` php
+Schema::create('users', function (Blueprint $table) {
+    
+    // Create UUID column
+    $table->char('id', 32)->primary();
+
+    $table->string('name');
+});
+```
 
 ### Implement in Eloquent Model
 
