@@ -2,18 +2,17 @@
 
 Generate UUID automatically when creating/inserting new data.
 
-
 ## Install
 
 Via Composer
 
-``` bash
-$ composer require laravolt/eloquent-uuid
+```bash
+composer require laravolt/eloquent-uuid
 ```
 
 Then register the service provider, head over your `config/app.php` file and add the following line into the `providers` array:
 
-``` php
+```php
 Laravolt\Database\Eloquent\UuidServiceProvider::class,
 ```
 
@@ -21,13 +20,12 @@ Laravolt\Database\Eloquent\UuidServiceProvider::class,
 
 ### Create/Alter Database Table Column Type
 
-``` php
+```php
 Schema::create('users', function (Blueprint $table) {
-    
+
     // Create UUID column
     $table->char('id', 32)->primary();
 
-    $table->string('name');
 });
 ```
 
@@ -43,8 +41,11 @@ use Laravolt\Database\Eloquent\Uuid;
 
 class Book extends Model implements UuidContract
 {
+
     use Uuid;
 
     // Uuid Columns
     protected $uuid = ['id'];
+
+}
 ```

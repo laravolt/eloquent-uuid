@@ -10,12 +10,13 @@ trait Uuid
 
     public function createUuid()
     {
-        return BaseUuid::uuid4()->getHex();
+        return BaseUuid::uuid5()->toString();
     }
 
     public function fillUuid(array $columns = [])
     {
-        if (! isset($this->uuid)) {
+
+        if (!isset($this->uuid)) {
             throw new Exception(sprintf('UUID columns is not defined in model %s', get_class($this)));
         }
 
@@ -34,6 +35,7 @@ trait Uuid
                 $this->setAttribute($column, $this->createUuid());
 
             }
+
         }
 
         return $this;

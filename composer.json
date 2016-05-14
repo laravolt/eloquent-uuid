@@ -1,33 +1,31 @@
 {
-    "name": "laravolt/eloquent-uuid",
-    "description": "Universally Unique Identifier (UUID) for Laravel Eloquent",
-    "keywords": [
-        "laravel",
-        "laravolt",
-        "eloquent",
-        "uuid"
-    ],
-    "homepage": "https://github.com/laravolt/eloquent-uuid",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Yoga Hanggara",
-            "email": "yohang88@gmail.com",
-            "homepage": "http://id-laravel.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php" : ">=5.5.0",
-        "ramsey/uuid": "^3.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit" : "4.*",
-        "scrutinizer/ocular": "~1.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "Laravolt\\": "src/Laravolt"
-        }
+  "name": "laravolt/eloquent-uuid",
+  "description": "Universally Unique Identifier (UUID) for Laravel Eloquent",
+  "keywords": [
+    "laravel",
+    "laravolt",
+    "eloquent",
+    "uuid"
+  ],
+  "homepage": "https://github.com/laravolt/eloquent-uuid",
+  "license": "MIT",
+  "authors": [{
+    "name": "Yoga Hanggara",
+    "email": "yohang88@gmail.com",
+    "homepage": "http://id-laravel.com",
+    "role": "Developer"
+  }],
+  "require": {
+    "php": ">=5.5.0",
+    "ramsey/uuid": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*",
+    "scrutinizer/ocular": "~1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Laravolt\\": "src/Laravolt"
     }
+  }
 }
